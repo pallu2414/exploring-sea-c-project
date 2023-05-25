@@ -1,0 +1,441 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void bubbles(int i,int y)
+{
+if(y<100)
+{
+y=y+200;
+if(y>200)
+{
+circle(100,y+110-i,5);
+}
+}
+else
+{
+circle(100,y+110-i,5);
+}
+}
+void bubbles1(int i,int x)
+{
+if(x<50)
+{
+x=x+150;
+if(x>150)
+{
+circle(50,x+60-i,8);
+}
+}
+else
+{
+circle(50,x+60-i,8);
+}
+}
+
+ void bubbles2(int i,int a)
+{
+if(a<150)
+{
+a=a+250;
+if(a>250)
+{
+circle(200,a+60-i,10);
+}
+}
+else
+{
+circle(200,a+60-i,10);
+}
+}
+void bubbles3(int i,int y)
+ {
+ if(y<100)
+ {
+ y=y+200;
+ if(y>200)
+ {
+ circle(250,y+110-i,5);
+ }
+ }
+ else
+ {
+ circle(250,y+110-i,5);
+}
+ }
+void bubbles4(int i,int x)
+{
+if(x<50)
+{
+x=x+150;
+if(x>150)
+{
+circle(300,x+60-i,8);
+}
+}
+else
+{
+circle(300,x+60-i,8);
+}
+}
+ void bubbles5(int i,int a)
+ {
+ if(a<100)
+ {
+ a=a+200;
+ if(a>200)
+ {
+ circle(350,a+110-i,5);
+ }
+ }
+ else
+ {
+ circle(350,a+110-i,5);
+}
+ }
+void bubbles6(int i,int x)
+{
+if(x<50)
+{
+x=x+150;
+if(x>150)
+{
+circle(400,x+60-i,8);
+}
+}
+else
+{
+circle(400,x+60-i,8);
+}
+}
+ void bubbles7(int i,int a)
+{
+if(a<150)
+{
+a=a+250;
+if(a>250)
+{
+circle(450,a+60-i,10);
+}
+}
+else
+{
+circle(450,a+60-i,10);
+}
+}
+ void bubbles8(int i,int y)
+ {
+ if(y<100)
+ {
+ y=y+200;
+ if(y>200)
+ {
+ circle(500,y+110-i,5);
+ }
+ }
+ else
+ {
+ circle(500,y+110-i,5);
+}
+ }
+
+//_________________STONES_______________//
+
+void stones(void)
+{
+ ellipse(100,390,0,360,20,10);
+ ellipse(125,370,0,360,25,10);
+ ellipse(150,390,0,360,25,10);
+ ellipse(170,375,0,360,15,5);
+ ellipse(200,380,0,360,10,15);
+ ellipse(250,380,0,360,20,15);
+circle(180,390,10);
+circle(220,390,10);
+ellipse(290,390,0,360,20,10);
+ellipse(315,370,0,360,25,10);
+ellipse(340,390,0,360,25,10);
+ellipse(360,375,0,360,15,5);
+ellipse(390,380,0,360,10,15);
+circle(370,390,10);
+circle(410,390,10);
+ellipse(440,380,0,360,20,15);
+ellipse(480,390,0,360,20,10);
+ellipse(505,370,0,360,25,10);
+ellipse(530,390,0,360,21,10);
+}
+//*********submarine**********//
+void submarine(int i)
+{
+line(369-i,161,504-i,161);
+line(369-i,230,504-i,230);
+arc(368-i,196,90,270,34);
+arc(500-i,196,270,90,35);
+rectangle(385-i,161,392-i,230);
+rectangle(484-i,161,491-i,230);
+circle(438-i,196,16);
+circle(438-i,196,21);
+line(537-i,104,537-i,288);
+line(504-i,161,518-i,104);
+line(504-i,230,518-i,288);
+line(518-i,104,537-i,104);
+line(518-i,288,537-i,288);
+line(415-i,161,450-i,115);
+line(461-i,161,461-i,115);
+line(448-i,115,461-i,115);
+line(448-i,115,448-i,58);
+line(455-i,115,455-i,46);
+line(438-i,58,446-i,58);
+line(438-i,46,455-i,46);
+rectangle(553-i,138,548-i,253);
+rectangle(450-i,133,484-i,138);
+arc(553-i,196,270,90,11);
+arc(438-i,52,270,90,6);
+pieslice(565-i,196,0,360,5);
+pieslice(438-i,176,0,360,3);
+pieslice(458-i,196,0,360,3);
+pieslice(438-i,219,0,360,3);
+pieslice(420-i,196,0,360,3);
+line(537-i,191,548-i,191);
+line(537-i,196,548-i,196);
+line(576-i,173,604-i,173);
+line(599-i,185,636-i,185);
+line(580-i,204,618-i,204);
+line(600-i,224,638-i,224);
+circle(625-i,243,4);
+circle(641-i,124,6);
+circle(657-i,200,9);
+circle(633-i,150,3);
+circle(676-i,222,7);
+}
+//_____________FISH___________//
+void fish1(int i)
+{
+ arc(400-i,150,50,320,30);
+ line(420-i,128,450-i,160);
+ line(420-i,173,450-i,130);
+ line(450-i,160,450-i,130);
+ circle(380-i,150,3);
+ arc(380-i,150,270,90,20);
+}
+
+void fish2(int i)
+{
+{
+ellipse(146+i,323,0,360,40,15);
+pieslice(180+i,320,0,360,3);
+line(80+i,308,106+i,323);
+line(80+i,338,106+i,323);
+line(80+i,308,80+i,338);
+arc(186+i,323,130,220,15);
+}
+}
+void fish3(int i)
+{
+{
+line(150+i,240,255+i,225);
+line(255+i,225,300+i,240);
+line(300+i,240,255+i,255);
+line(255+i,255,150+i,240);
+line(105+i,225,150+i,240);
+line(150+i,240,105+i,255);
+line(105+i,225,105+i,255);
+pieslice(290+i,238,0,360,3);
+}
+}
+
+
+void fish(int i)
+{
+
+ellipse(146+i,323,0,360,92,23);
+line(54+i,323,8+i,290);
+line(54+i,323,8+i,356);
+line(8+i,290,8+i,356);
+line(146+i,277,192+i,303);
+line(146+i,277,179+i,300);
+line(146+i,369,179+i,346);
+line(146+i,369,192+i,343);
+pieslice(232+i,320,0,360,3);
+
+
+}
+
+//_______________CRAB_____________//
+
+
+void crab(int i)
+{
+ellipse(238-i,323,0,360,60,35);
+circle(268-i,260,8);
+circle(208-i,260,8);
+sector(348-i,275,40,360,18,18);
+pieslice(128-i,275,175,360,18);
+pieslice(128-i,275,135,0,18);
+pieslice(268-i,260,0,360,4);
+pieslice(208-i,260,0,360,4);
+line(268-i,260,248-i,290);
+line(208-i,260,228-i,290);
+arc(298-i,260,250,360,45);
+arc(298-i,260,229,358,42);
+arc(178-i,260,180,285,45);
+arc(178-i,260,180,285,42);
+pieslice(198-i,350,230,240,40);
+pieslice(278-i,350,300,310,40);
+}
+//__________________STARFISH__________//
+void starfish(int i)
+{
+line(276+i,230,299+i,184);
+line(230+i,230,276+i,230);
+line(276+i,265,230+i,230);
+line(253+i,299,276+i,265);
+line(299+i,276,253+i,299);
+line(345+i,299,299+i,276);
+line(299+i,184,322+i,230);
+line(322+i,230,368+i,230);
+line(368+i,230,322+i,265);
+line(322+i,265,345+i,299);
+pieslice(286+i,242,0,360,5);
+pieslice(304+i,242,0,360,5);
+}
+main()
+{
+int gd=DETECT,gm,i,y,x,a;
+initgraph(&gd,&gm,"c:\\tc\\bgi");
+x=150;
+y=200;
+a=250;
+setbkcolor(1);
+for(i=0;i<=300;i++)
+{
+settextstyle(8,HORIZ_DIR,10);
+outtextxy(200,150,"SEA");
+delay(10);
+cleardevice();
+}
+for(i=0;i<=300;i++)
+{
+bubbles(i,y);
+bubbles1(i,x);
+bubbles2(i,a);
+bubbles3(i,y);
+bubbles4(i,x);
+bubbles5(i,a);
+bubbles6(i,x);
+bubbles7(i,a);
+bubbles8(i,y);
+a--;
+y--;
+x--;
+fish1(i);
+fish2(i);
+fish3(i);
+stones();
+delay(20);
+cleardevice();
+}
+x=150;
+y=200;
+a=250;
+for(i=0;i<=300;i++)
+{
+bubbles(i,y);
+bubbles1(i,x);
+bubbles2(i,a);
+bubbles3(i,y);
+bubbles4(i,x);
+bubbles5(i,a);
+bubbles6(i,x);
+bubbles7(i,a);
+bubbles8(i,y);
+a--;
+y--;
+x--;
+stones();
+submarine(i);
+delay(20);
+cleardevice();
+}
+x=150;
+y=200;
+a=250;
+for(i=0;i<=300;i++)
+{
+bubbles(i,y);
+bubbles1(i,x);
+bubbles2(i,a);
+bubbles3(i,y);
+bubbles4(i,x);
+bubbles5(i,a);
+bubbles6(i,x);
+bubbles7(i,a);
+bubbles8(i,y);
+a--;
+y--;
+x--;
+stones();
+fish(i);
+fish1(i);
+delay(20);
+cleardevice();
+}
+x=150;
+y=200;
+a=250;
+for(i=0;i<=300;i++)
+{
+bubbles(i,y);
+bubbles1(i,x);
+bubbles2(i,a);
+bubbles3(i,y);
+bubbles4(i,x);
+bubbles5(i,a);
+bubbles6(i,x);
+bubbles7(i,a);
+bubbles8(i,y);
+a--;
+y--;
+x--;
+stones();
+crab(i);
+fish1(i);
+delay(20);
+cleardevice();
+}
+
+x=150;
+y=200;
+a=250;
+for(i=0;i<=300;i++)
+{
+bubbles(i,y);
+bubbles1(i,x);
+bubbles2(i,a);
+bubbles3(i,y);
+bubbles4(i,x);
+bubbles5(i,a);
+bubbles6(i,x);
+bubbles7(i,a);
+bubbles8(i,y);
+a--;
+y--;
+x--;
+stones();
+starfish(i);
+fish(i);
+delay(20);
+cleardevice();
+}
+settextstyle(8,HORIZ_DIR,6);
+outtextxy(130,40,"PROJECT BY");
+settextstyle(8,HORIZ_DIR,5);
+outtextxy(195,110 ,"SRAVYA");
+outtextxy(180,150,"MOUNIKA");
+outtextxy(150,190,"SUCHARITHA");
+outtextxy(240,230,"SAI");
+outtextxy(180,270,"JAHNAVI");
+outtextxy(140,310,"SIVA PRIYA");
+delay(20);
+getch();
+return 0;
+}
+
